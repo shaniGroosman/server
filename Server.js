@@ -1,7 +1,7 @@
 import express from "express";
 import courseRouter from "./Routers/Course.js";
 import userRouter from "./Routers/User.js";
-import { connectToDb } from "./config/db.js";
+import { connectToDb } from "./config/DB.js";
 import dotenv from "dotenv";
 import fs from "fs/promises";
 
@@ -25,7 +25,7 @@ app.use("/api/course", courseRouter);
 app.use("/api/user", userRouter);
 let port=process.env.PORT;
 
-app.listen(port,"localhost",()=>{
+app.listen(port,()=>{
     console.log("app is listening on port "+port)
 })
 
