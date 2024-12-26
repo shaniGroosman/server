@@ -1,7 +1,7 @@
 import express from "express";
 import courseRouter from "./Routers/Course.js";
 import userRouter from "./Routers/User.js";
-import { connectToDb } from "./config/DB.js";
+import { connectToDb } from "./config/Db.js";
 import dotenv from "dotenv";
 import fs from "fs/promises";
 
